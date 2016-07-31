@@ -1,0 +1,65 @@
+@import url("owfont-regular.min.css");
+
+html, body {
+  margin: 0;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #333333;
+  background: #402A22;
+}
+
+main {
+  width: 600px;
+  padding: 25px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+article {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
+
+#map img { display: block; }
+#map p {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  margin: -10px 0 0 0;
+  text-align: center;
+}
+
+#weather {
+  position: absolute;
+  bottom: -100px;
+  left: -100%;
+  z-index: 2;
+  padding: 15px;
+  color: #ffffff;
+  border-top-right-radius: 18px;
+  background: rgba(0, 0, 0, .7);
+  -webkit-transition: bottom ease 400ms, left ease 400ms;
+  -moz-transition: bottom ease 400ms, left ease 400ms;
+  transition: bottom ease 400ms, left ease 400ms;
+}
+#weather.slide {
+  bottom: 0;
+  left: 0;
+}
+
+h2, h3, p { margin: 0; }
+h2 { padding: 0 0 10px 0; }
+h3 {
+  display: inline-block;
+  padding: 0 20px 0 0;
+}
+
+#weather p { display: inline-block; }
+
+.owf {
+  font-size: 24px;
+  vertical-align: middle;
+  color: #44aaff;
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Geolocation API Example</title>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="javascripts/handlebars-v3.0.0.js"></script>
+    <link rel="stylesheet" href="stylesheets/geolocation.css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <div id="map"><p>Getting geolocation...</p></div>
+        <div id="weather"></div>
+      </article>
+    </main>
+
+    <script id="weather_card" type="text/x-handlebars">
+      <h2>{{location}}</h2>
+      <h3>{{{temp}}}</h3>
+      <p><i class="owf owf-{{icon}}"></i> {{description}}</p>
+    </script>
+
+    <script src="javascripts/geolocation.js"></script>
+  </body>
+</html>
